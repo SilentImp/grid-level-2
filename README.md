@@ -1,3 +1,3 @@
-# Краткое руководство по гридам
+# Grids talk
 
-* [Слайды](https://silentimp.github.io/grid/)
+* [Slides](https://silentimp.github.io/grid-level-2/)
