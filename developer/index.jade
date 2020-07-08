@@ -1,0 +1,1410 @@
+extends ./partials/layout.jade
+
+block title
+    title CSS Grid Layout
+
+block slides
+
+    article.cloud.cloud--title
+        h1
+            .wrapper
+                .aligned CSS
+                    br
+                    | Grid
+                    br
+                    | Layout
+
+    article.illustration.illustration--example-0
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.html.
+                    &lt;tr>
+                        &lt;td>&lt;!-- … -->&lt;/td>
+                        &lt;td>&lt;!-- … -->&lt;/td>
+                        &lt;td>&lt;!-- … -->&lt;/td>
+                    &lt;/tr>
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.html.
+                    &lt;div class="clear-fix">
+                        &lt;div>&lt;!-- … -->&lt;/div>
+                        &lt;div>&lt;!-- … -->&lt;/div>
+                        &lt;div>&lt;!-- … -->&lt;/div>
+                    &lt;/div>
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    display: flow-root;
+
+    article.illustration.illustration--bricks
+
+    //- article.illustration.illustration--columns
+
+    //- article.illustration.illustration--example-1
+
+    //- article.illustration.illustration--example-2
+
+    article.illustration.illustration--example-3
+
+    //- article.illustration.illustration--example-4
+
+    article.book.book--full.illustration.illustration--andy.overlay
+        img.simmons--tweet(src="images/andy.png", alt="Andy Clarke")
+        .overlay__abstract
+            h1.overlay__title Andy Clarke
+            img.overlay__qr(src="images/andy.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://stuffandnonsense.co.uk/", data-click=true) https://stuffandnonsense.co.uk/
+
+
+    article.screen.screen--inspired.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Inspired by CSS Grid
+            img.overlay__qr(src="images/inspired.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://www.youtube.com/watch?v=eUeoLUjOUHw", data-click=true) https://www.youtube.com/watch?v=eUeoLUjOUHw
+
+    article.screen.screen--articles.overlay
+        .overlay__abstract.overlay__abstract--left
+            h3.overlay__title Inspired Design Decisions
+            img.overlay__qr(src="images/articles.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://www.smashingmagazine.com/2019/06/inspired-design-decisions-avaunt-magazine/", data-click=true) https://www.smashingmagazine.com/2019/06/inspired-design-decisions-avaunt-magazine/
+
+
+    article.screen.screen--magazine.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Inspired Design Decisions: Magazine
+            img.overlay__qr(src="images/magazine.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://stuffandnonsense.co.uk/inspired-design-decisions/shop/index.html", data-click=true) https://stuffandnonsense.co.uk/inspired-design-decisions/shop/index.html
+
+    article.illustration.illustration--example-2
+
+    article.center.currency
+        .wrapper
+            h1 £ 3,99
+
+    article.illustration.illustration--drum
+
+    article.screen.screen--p9x
+
+    article.screen.screen--p10
+
+    article.screen.screen--grid.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title CSS Grid Layout Module Level 1
+            img.overlay__qr(src="images/grid.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://drafts.csswg.org/css-grid/", data-click=true) https://drafts.csswg.org/css-grid/
+
+    article.screen.screen--support
+
+    article.screen.screen--draft-2.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title CSS Grid Layout Module Level 2
+            img.overlay__qr(src="images/draft.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://drafts.csswg.org/css-grid-2/", data-click=true) https://drafts.csswg.org/css-grid-2/
+
+    article.screen.screen--support-level-2
+
+    article.book.book--full.illustration.illustration--garden.overlay
+        .overlay__abstract.overlay__abstract--right
+            h1.overlay__title Grid Garden
+            img.overlay__qr(src="images/garden.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="http://cssgridgarden.com/", data-click=true) http://cssgridgarden.com/
+
+    article.book.book--full.screen.screen--cssgridio.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title CSS Grid with Wes Bos
+            img.overlay__qr(src="images/cssgridio.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://cssgrid.io/", data-click=true) https://cssgrid.io/
+
+    //- article.screen.screen--quick.overlay
+    //-     .overlay__abstract.overlay__abstract--right
+    //-         h4.overlay__title Here's a Super Quick Way to Try out CSS Grid
+    //-         img.overlay__qr(src="images/quick.svg", alt="QRCODE cо ссылкой")
+    //-         p
+    //-             a.overlay__link(href="http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid", data-click=true) http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid
+
+
+    //- article.book.book--full.screen.screen--trick.overlay
+    //-     .overlay__abstract.overlay__abstract--right
+    //-         h3.overlay__title A Complete Guide to Grid
+    //-         img.overlay__qr(src="images/trick.svg", alt="QRCODE cо ссылкой")
+    //-         p
+    //-             a.overlay__link(href="https://css-tricks.com/snippets/css/complete-guide-grid/", data-click=true) https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+    article.screen.screen--layoutLandYouTube.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Layout Land YouTube
+            img.overlay__qr(src="images/layoutLandYouTube.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag", data-click=true) https://www.youtube.com/
+                    br
+                    | channel/UC7TizprGknbDalbHplROtag
+
+
+    article.screen.screen--layoutLand.overlay
+        .overlay__abstract.overlay__abstract--right
+            h1.overlay__title Layout Land
+            img.overlay__qr(src="images/layoutLand.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="http://www.layout.land/", data-click=true) http://www.layout.land/
+
+    article.book.book--full.illustration.illustration--simmons.overlay
+        img.simmons--tweet(src="images/tweet.png", alt="Tweet")
+        .overlay__abstract
+            h1.overlay__title Jen Simmons
+            img.overlay__qr(src="images/simmons.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="http://jensimmons.com/", data-click=true) http://jensimmons.com/
+
+
+    article.book.book--full.illustration.illustration--yt.overlay
+        .overlay__abstract
+            h4.overlay__title Start Using CSS Grid Layouts Today
+            img.overlay__qr(src="images/yt.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://www.youtube.com/watch?v=tjHOLtouElA", data-click=true) https://www.youtube.com/watch?v=tjHOLtouElA
+
+    article.screen.screen--ex.overlay
+        .overlay__abstract.overlay__abstract--right
+            h4.overlay__title Grid by Example
+            img.overlay__qr(src="images/ex.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://gridbyexample.com/", data-click=true) https://gridbyexample.com/
+
+    article.book.book--brief.illustration.illustration--brief.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title GET READY FOR CSS GRID LAYOUT
+            img.overlay__qr(src="images/getready.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://abookapart.com/products/get-ready-for-css-grid-layout", data-click=true) https://abookapart.com/products/get-ready-for-css-grid-layout
+
+
+    article.book.book--full.illustration.illustration--full.overlay
+        .overlay__abstract.overlay__abstract--right
+            h2.overlay__title THE NEW CSS LAYOUT
+            img.overlay__qr(src="images/newlayout.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://abookapart.com/products/the-new-css-layout", data-click=true) https://abookapart.com/products/the-new-css-layout
+
+    article.book.book--full.illustration.illustration--bugs.overlay
+        .overlay__abstract
+            h1.overlay__title Grid Bugs
+            img.overlay__qr(src="images/bugs.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://github.com/rachelandrew/gridbugs", data-click=true) https://github.com/rachelandrew/gridbugs
+
+    article.book.book--full.illustration.illustration--rachelandrew.overlay
+        .overlay__abstract
+            h1.overlay__title Rachel Andrew
+            img.overlay__qr(src="images/rachelandrew.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://rachelandrew.co.uk/", data-click=true) https://rachelandrew.co.uk/
+
+    article.screen.screen--cguide.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title A Complete Guide to Grid
+            img.overlay__qr(src="images/cguide.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://css-tricks.com/snippets/css/complete-guide-grid/", data-click=true) https://css-tricks.com/snippets/css/complete-guide-grid/
+
+    article.book.book--full.screen.screen--yoksel.overlay
+        .overlay__abstract.overlay__abstract--left
+            h3.overlay__title CSS Grid Cheat Sheet
+            img.overlay__qr(src="images/yoksel.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://yoksel.github.io/grid-cheatsheet/", data-click=true) https://yoksel.github.io/grid-cheatsheet/
+
+    //- article.screen.screen--live.overlay
+    //-     .overlay__abstract.overlay__abstract--right
+    //-         h1.overlay__title CSS-LIVE
+    //-         img.overlay__qr(src="images/live.svg", alt="QRCODE cо ссылкой")
+    //-         p
+    //-             a.overlay__link(href="http://css-live.ru/tag/css3-grid-layout", data-click=true) http://css-live.ru/tag/css3-grid-layout
+
+    //- article
+    //-     p поддержка
+
+
+
+    //- article.screen.screen--support-ie
+
+    //- article.screen.screen--support-next.center.cloud.cloud--ie-next
+    //-     h1
+    //-         p.wrapper 17 октября
+
+    //- article
+    //-     p свойства
+
+    article.center.currency
+        .wrapper
+            h1 Grid
+
+    article.illustration.illustration--grid-scheme
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        display: grid;
+                    }
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.html.
+                    &lt;div class="container">
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;!-- … -->
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                    &lt;/div>
+
+    article.example.example--base-1
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        display: grid;
+                        grid-template-columns:
+                            1fr 2fr 1fr 1fr;
+                        grid-template-rows:
+                            100px 1fr 1fr 100px;
+                    }
+
+    article.example.example--base-2
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.example.example--base-1-flex
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        display: grid;
+                        grid-template-columns:
+                            repeat(4, 1fr);
+                        grid-template-rows:
+                            100px auto 100px 100px;
+                    }
+
+    article.example.example--base-3
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        grid-template-columns:
+                            repeat(
+                                auto-fill,
+                                minmax(200px, 1fr)
+                            );
+                    }
+
+    article.example.example--base-15
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
+
+    article.example.example--base-16
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
+
+    article.example.example--base-17
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        grid-template:
+                            1fr 50px 1fr 1fr /
+                            100px 3fr 1fr 100px;
+                    }
+
+    article.example.example--base-14
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        grid-gap: 20px;
+                    }
+
+    article.example.example--base-13
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.html.
+                    &lt;div class="container">
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;div class="item">First&lt;/div>
+                        &lt;div class="item item--first">Second&lt;/div>
+                        &lt;!-- … -->
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                        &lt;div class="item">&lt;!-- … -->&lt;/div>
+                    &lt;/div>
+
+    article.example.example--base-4
+        .container
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    .item--second {
+                        order: -1;
+                    }
+
+    article.example.example--base-5
+        .container
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .item--first {
+                        order: 1;
+                    }
+                    .item--second {
+                        order: 2;
+                    }
+                    .item--first ~ .item {
+                        order: 3;
+                    }
+
+    article.example.example--base-55
+        .container
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.html.
+                    &lt;div class="container">
+                        &lt;div class="item item--alpha">&alpha;&lt;/div>
+                        &lt;div class="item item--omega">&omega;&lt;/div>
+                    &lt;/div>
+
+    article.example.example--base-6
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.center.code-7
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-column-start: 3;
+                    }
+                    .item--omega {
+                        grid-row-start: 3;
+                    }
+
+    article.example.example--base-7
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-column-start: 3;
+                        grid-column-end: 5;
+                    }
+                    .item--omega {
+                        grid-row-start: 3;
+                        grid-row-end: 5;
+                    }
+
+    article.example.example--base-8
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-column: 3 / 5;
+                    }
+                    .item--omega {
+                        grid-row: 3 / 5;
+                    }
+
+    article.example.example--base-9
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-column: 3 / span 2;
+                        grid-row: 1 / span 2;
+                    }
+                    .item--omega {
+                        grid-row: 3 / span 2;
+                        grid-column: 1 / span 2;
+                    }
+
+    article.example.example--base-10
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-area: 2 / 2 / span 2 / span 3;
+                    }
+
+    article.example.example--base-11
+        .container
+            .item.item--alpha &alpha;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .item--alpha {
+                        grid-area: alpha;
+                    }
+                    .item--omega {
+                        grid-area: omega;
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        grid-template-areas:
+                            "omega omega alpha ."
+                            "omega omega alpha ."
+                            ". . alpha ."
+                            ". . alpha .";
+                    }
+
+    article.example.example--base-12
+        .container
+            .item.item--alpha &alpha;
+            .item.item--omega &omega;
+
+    article.example.example-grid-layout
+        .page
+            main.main The captain grabbed the platypus and joyfully threw it into the sky. The animal spread its wings and took off.
+            nav.nav Navigation
+            aside.aside Advertisement
+            header.header Header
+            footer.footer Footer
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.html.
+                    &lt;div class="page">
+                        &lt;main class="main">Content&lt;/main>
+                        &lt;nav class="nav">Navigation&lt;/nav>
+                        &lt;aside class="aside">Advertisement&lt;/aside>
+                        &lt;header class="header">Header&lt;/header>
+                        &lt;footer class="footer">Footer&lt;/footer>
+                    &lt;/div>
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .page {
+                        display: grid;
+                        grid-gap: 0 20px;
+                        grid-template-columns: 250px auto 350px;
+                        grid-template-rows: 100px auto 100px;
+                    }
+
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .header {
+                        grid-row: 1;
+                        grid-column: 1/4;
+                    }
+                    .footer {
+                        grid-row: 3;
+                        grid-column: 1/4;
+                    }
+
+    article.center.code-3
+        .wrapper
+            pre
+                code.css.
+                    .nav {
+                        grid-row: 2;
+                        grid-column: 1;
+                    }
+                    .main {
+                        grid-row: 2;
+                        grid-column: 2;
+                    }
+                    .aside {
+                        grid-row: 2;
+                        grid-column: 3;
+                    }
+
+    article.example.example-grid-layout
+        .page
+            main.main The captain grabbed the platypus and joyfully threw it into the sky. The animal spread its wings and took off.
+            nav.nav Navigation
+            aside.aside Advertisement
+            header.header Header
+            footer.footer Footer
+
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css.
+                    .page {
+                        display: grid;
+                        grid-gap: 0 20px;
+                        grid-template-columns: 250px auto 350px;
+                        grid-template-rows: 100px auto 100px;
+                        grid-template-areas:
+                            "header header header"
+                            "nav    main   aside"
+                            "footer footer footer";
+                    }
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .header { grid-area: header; }
+                    .aside { grid-area: aside; }
+                    .nav { grid-area: nav; }
+                    .main { grid-area: main; }
+                    .footer { grid-area: footer; }
+
+
+    article.example.example-grid-layout-area
+        .page
+            main.main The captain grabbed the platypus and joyfully threw it into the sky. The animal spread its wings and took off.
+            nav.nav Navigation
+            aside.aside Advertisement
+            header.header Header
+            footer.footer Footer
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css.
+                    @media (max-width: 900px) {
+                        .page {
+                            grid-template-areas:
+                                "header header header"
+                                "nav    main   main"
+                                "footer footer footer";
+                        }
+                    }
+
+    article.example.example-grid-layout-area.small
+        .page.wide-x
+            main.main The captain grabbed the platypus and joyfully threw it into the sky. The animal spread its wings and took off.
+            nav.nav Navigation
+            aside.aside Advertisement
+            header.header Header
+            footer.footer Footer
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css.
+                    @media (max-width: 900px) {
+                        .page {
+                            grid-template-areas:
+                                "header header header"
+                                "nav    main   main"
+                                "footer footer footer";
+                        }
+                        .aside {
+                            display: none;
+                        }
+                    }
+
+    article.example.example-grid-layout-area
+        .page.wide
+            main.main The captain grabbed the platypus and joyfully threw it into the sky. The animal spread its wings and took off.
+            nav.nav Navigation
+            aside.aside Advertisement
+            header.header Header
+            footer.footer Footer
+
+    article.illustration.illustration--debug.cloud.cloud--debug
+        h1
+            p.wrapper How to
+                br
+                | debug?
+
+    article.screen.screen--ffdebug
+
+    //- article.screen.screen--secret-flags
+
+    article.screen.screen--chromedebug
+
+    article.screen.screen--plugin-1
+
+    article.screen.screen--plugin-2
+
+    article.illustration.illustration--pinterest
+
+    article.screen.screen--pinterest
+
+    article.screen.screen--code.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Репозиторий с кодом
+            img.overlay__qr(src="images/code.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://github.com/SilentImp/grid-task", data-click=true) https://github.com/SilentImp/grid-task
+
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.html.
+                    &lt;main class="products">
+                        &lt;article class="product">…&lt;/article>
+                        &lt;article class="product">…&lt;/article>
+                        &lt;article class="product">…&lt;/article>
+                        &lt;article class="product">…&lt;/article>
+                        &lt;article class="product">…&lt;/article>
+                        …
+                    &lt;/main>
+
+    article.screen.screen--p1
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    $height: 240px;
+                    $width: 150px;
+                    $gap: 20px;
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .products {
+                        display: grid;
+                        grid-gap: $gap;
+                        grid-template-columns:
+                            repeat(6, 150px);
+                    }
+
+    article.screen.screen--p2
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    &--tall {
+                        …
+                        grid-row: span 2;
+                        height: calc($height*2 + $gap);
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    &--big {
+                        …
+                        grid-row: span 2;
+                        grid-column: span 2;
+                        height: calc($height*2 + $gap);
+                        width: calc($width*2 + $gap);
+                    }
+
+    article.screen.screen--p3
+
+    article.screen.screen--banner
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;main class="products">
+                        &lt;aside class="banner">&lt;/aside>
+                        &lt;article class="product product--tall">&lt;/article>
+                        &lt;article class="product">&lt;/article>
+                        &lt;article class="product product--tall">&lt;/article>
+
+    article.center.code-8
+        .wrapper
+            pre
+                code.css.
+                    .banner {
+                        …
+                        grid-row-start: 2;
+                        grid-column-start: 2;
+                    }
+
+    article.screen.screen--p4
+
+    article.screen.screen--banner-wide
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;main class="products">
+                        &lt;aside class="banner-wide">&lt;/aside>
+                        &lt;article class="product product--tall">&lt;/article>
+                        &lt;article class="product">&lt;/article>
+                        &lt;article class="product product--tall">&lt;/article>
+
+
+    article.center.code-8
+        .wrapper
+            pre
+                code.css.
+                    .banner--wide {
+                        …
+                        grid-row-start: 4;
+                        grid-column: span 6;
+                    }
+
+    article.screen.screen--p5
+
+    article.center.code-8
+        .wrapper
+            pre
+                code.css.
+                    .products {
+                        …
+                        grid-auto-flow: dense;
+                    }
+
+    article.screen.screen--p6
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;article class="content">
+                        &lt;aside class="banners">
+                            &lt;aside class="banner">&lt;/aside>
+                            &lt;!--…-->
+                        &lt;/aside>
+                        &lt;main class="products">
+                            &lt;article class="product">&lt;/article>
+                            &lt;!--…-->
+                        &lt;/main>
+                    &lt;/article>
+
+    article.screen.screen--p7
+
+    article.center.code-8
+        .wrapper
+            pre
+                code.css.
+                    .banners,
+                    .products {
+                        display: contents;
+                        margin: auto;
+                    }
+
+    article.screen.screen--p8
+
+    article.screen.screen--contents
+
+    article.screen.screen--support-future
+
+    article.screen.screen--support-future-2
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    @supports ( grid-auto-flow: dense ) {
+                        /* Magic */
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Flex */
+                    .products {…}
+                    .product {…}
+                    @supports ( grid-auto-flow: dense ) {
+                        /* Grids */
+                        .products {…}
+                        .product {…}
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Flex */
+                    .products {
+                        max-width: 1020px;
+                        margin: 10px auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Flex */
+                    .product {
+                        …
+                        margin: 0 10px 20px;
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Grid */
+                    .product {
+                        …
+                        margin: auto;
+                    }
+
+    article.screen.screen--p9
+
+    article.screen.screen--p10
+
+    article.center.currency.small-x
+        .wrapper
+            h1 SubGrid
+    article.subgrid-demo
+        .wrapper
+            .subgrid-block.subgrid
+                .card
+                    h1 Brita Water Replacement Filters for Pitchers and Dispensers, 3ct, White
+                    p INCLUDES OUR MULTI-STAGE PH001 FILTER – Increases pH up to pH10, increases -ORP and ionizes drinking water. Remineralization adds minerals such as selenium & calcium. Filters fluoride, chlorine, and chloramine. Filters heavy metals in tap water providing a great taste. Removes odor and color.
+                    button Buy
+                .card
+                    h1 Lake Industries The Alkaline Water Pitcher Cartridge - 4 Pack
+                    p HUGE FILTER CAPACITY - MUCH LONGER THAN OUR COMPETITION = 1500 cups/360 litres/96 gallons per PH001 filter.
+                    button Buy
+                .card
+                    h1 pH RESTORE Alkaline Water Pitcher  – Alkaline Water Filter Pitcher – Water Ionizer – High pH Ionized Water, 118oz, 3.5L
+                    p NEW ENHANCED FILTER DESIGN - ADD OUR 'secret weapon' PH002 ULTRAFILTRATION (UF) MEMBRANE FILTER (sold separately, search B07PZCLDRL) to your PH001 filter, & take your water filtration to the next level.
+                    button Buy
+
+    article.center.code-7
+        .wrapper
+            pre
+                code.html.
+                    &lt;section class="featured">
+                        &lt;article class="card" />
+                        &lt;article class="card" />
+                        &lt;article class="card" />
+                    &lt;/section>
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        grid-gap: 0 24px;
+                    }
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;article class="card">
+                        &lt;h2 class="title">
+                            &lt;!--…-->
+                        &lt;/h2>
+                        &lt;p class="description">
+                            &lt;!--…-->
+                        &lt;/p>
+                        &lt;button type="button" class="buy">
+                            &lt;!--…-->
+                        &lt;/button>
+                    &lt;/article>
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    .card {
+                        display: grid;
+                    }
+
+    article.subgrid-demo
+        .wrapper
+            .subgrid-block
+                .card
+                    h1 Brita Water Replacement Filters for Pitchers and Dispensers, 3ct, White
+                    p INCLUDES OUR MULTI-STAGE PH001 FILTER – Increases pH up to pH10, increases -ORP and ionizes drinking water. Remineralization adds minerals such as selenium & calcium. Filters fluoride, chlorine, and chloramine. Filters heavy metals in tap water providing a great taste. Removes odor and color.
+                    button Buy
+                .card
+                    h1 Lake Industries The Alkaline Water Pitcher Cartridge - 4 Pack
+                    p HUGE FILTER CAPACITY - MUCH LONGER THAN OUR COMPETITION = 1500 cups/360 litres/96 gallons per PH001 filter.
+                    button Buy
+                .card
+                    h1 pH RESTORE Alkaline Water Pitcher  – Alkaline Water Filter Pitcher – Water Ionizer – High pH Ionized Water, 118oz, 3.5L
+                    p NEW ENHANCED FILTER DESIGN - ADD OUR 'secret weapon' PH002 ULTRAFILTRATION (UF) MEMBRANE FILTER (sold separately, search B07PZCLDRL) to your PH001 filter, & take your water filtration to the next level.
+                    button Buy
+
+    article.center.code-9
+        .wrapper
+            pre
+                code.css.
+                    .card {
+                        display: contents;
+                    }
+
+    article.subgrid-demo
+        .wrapper
+            .subgrid-block.content
+                .card
+                    h1 Brita Water Replacement Filters for Pitchers and Dispensers, 3ct, White
+                    p INCLUDES OUR MULTI-STAGE PH001 FILTER – Increases pH up to pH10, increases -ORP and ionizes drinking water. Remineralization adds minerals such as selenium & calcium. Filters fluoride, chlorine, and chloramine. Filters heavy metals in tap water providing a great taste. Removes odor and color.
+                    button Buy
+                .card
+                    h1 Lake Industries The Alkaline Water Pitcher Cartridge - 4 Pack
+                    p HUGE FILTER CAPACITY - MUCH LONGER THAN OUR COMPETITION = 1500 cups/360 litres/96 gallons per PH001 filter.
+                    button Buy
+                .card
+                    h1 pH RESTORE Alkaline Water Pitcher  – Alkaline Water Filter Pitcher – Water Ionizer – High pH Ionized Water, 118oz, 3.5L
+                    p NEW ENHANCED FILTER DESIGN - ADD OUR 'secret weapon' PH002 ULTRAFILTRATION (UF) MEMBRANE FILTER (sold separately, search B07PZCLDRL) to your PH001 filter, & take your water filtration to the next level.
+                    button Buy
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .card {
+                        grid-template-rows: subgrid;
+                    }
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    grid-template-rows:
+                        subgrid;
+                    grid-template-cols:
+                        subgrid;
+
+    article.subgrid-demo
+        .wrapper
+            .subgrid-block.subgrid
+                .card
+                    h1 Brita Water Replacement Filters for Pitchers and Dispensers, 3ct, White
+                    p INCLUDES OUR MULTI-STAGE PH001 FILTER – Increases pH up to pH10, increases -ORP and ionizes drinking water. Remineralization adds minerals such as selenium & calcium. Filters fluoride, chlorine, and chloramine. Filters heavy metals in tap water providing a great taste. Removes odor and color.
+                    button Buy
+                .card
+                    h1 Lake Industries The Alkaline Water Pitcher Cartridge - 4 Pack
+                    p HUGE FILTER CAPACITY - MUCH LONGER THAN OUR COMPETITION = 1500 cups/360 litres/96 gallons per PH001 filter.
+                    button Buy
+                .card
+                    h1 pH RESTORE Alkaline Water Pitcher  – Alkaline Water Filter Pitcher – Water Ionizer – High pH Ionized Water, 118oz, 3.5L
+                    p NEW ENHANCED FILTER DESIGN - ADD OUR 'secret weapon' PH002 ULTRAFILTRATION (UF) MEMBRANE FILTER (sold separately, search B07PZCLDRL) to your PH001 filter, & take your water filtration to the next level.
+                    button Buy
+    article.center.currency.small-xs
+        .wrapper
+            h1 Masonry
+
+    article.screen.screen--masonry.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Pinterest/Masonry style layout support
+            img.overlay__qr(src="images/masonry.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://github.com/w3c/csswg-drafts/issues/945", data-click=true) https://github.com/w3c/csswg-drafts/issues/945
+
+    article.screen.screen--belong.overlay
+        .overlay__abstract.overlay__abstract--left
+            h3.overlay__title Does masonry belong in the CSS Grid specification?
+            img.overlay__qr(src="images/belong.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://rachelandrew.co.uk/archives/2020/05/05/does-masonry-belong-in-the-css-grid-specification/", data-click=true) https://rachelandrew.co.uk/archives/2020/05/05/does-masonry-belong-in-the-css-grid-specification/
+
+
+    article.screen.screen--subgrid-flag
+
+
+    article.masonry-demo
+        .wrapper
+            .masonry-block.masonry
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+
+
+    article.center.code-7
+        .wrapper
+            pre
+                code.html.
+                    &lt;section class="photos">
+                        &lt;img src="" alt="" />
+                        &lt;img src="" alt="" />
+                        &lt;img src="" alt="" />
+                        &lt;!--…-->
+                    &lt;/section>
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .photos {
+                        display: grid;
+                        grid-template-columns:
+                            repeat(5, max-content);
+                        grid-template-rows:
+                            175px 200px 300px;
+                    }
+
+    article.masonry-demo
+        .wrapper
+            .masonry-block
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .photos {
+                        grid-template-rows: masonry;
+                    }
+
+    article.center.code-10
+        .wrapper
+            pre
+                code.css.
+                    grid-template-rows:
+                        masonry;
+                    grid-template-cols:
+                        masonry;
+
+
+    article.masonry-demo
+        .wrapper
+            .masonry-block.masonry
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+                img(src="../images/hs.png" alt="")
+                img(src="../images/ws.png" alt="")
+                img(src="../images/bh.png" alt="")
+                img(src="../images/sb.png" alt="")
+
+    article.contacts.center.qrcode
+        .wrapper
+            .about-speaker.half
+                p.name Anton Nemtsev
+                p.link http://silentimp.info/
+                p.twitter @silentimp
+                p.email thesilentimp@gmail.com
+                p.skype skype: ravencry
+            .half
+                img(src="images/git.svg", alt="QRCODE cо ссылкой на доклад")
+
+            p
+                a(href="https://github.com/SilentImp/LayoutTalk", data-click=true) https://goo.gl/y3lvfc
